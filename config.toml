@@ -1,0 +1,37 @@
+baseURL = 'http://a7vicky.github.io/blog'
+languageCode = 'en-us'
+title = "Abhishek's Blog"
+theme = "m10c"
+
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[params]
+  author = "Abhishek Vicky"
+  description = "All technical stuff I do as a SRE."
+  avatar = "vicky.jpg"
+
+  [[params.social]]
+    icon = "github"
+    name = "GitHub"
+    url = "https://github.com/a7vicky"
+
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/vicky18dec"
