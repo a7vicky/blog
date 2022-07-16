@@ -1,25 +1,49 @@
 baseURL = 'http://a7vicky.github.io/'
 languageCode = 'en-us'
 title = "Abhishek's Blog"
-theme = "m10c"
+theme = "harbor"
 
+[Author]
+  name = "Hugo Author"
 
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 2
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 3
+[outputs]
+  section = ["JSON", "HTML"]
+
+[[params.nav]]
+  identifier = "about"
+  name = "About"
+  icon = "fas fa-user fa-lg"
+  url = "/about/"
+  weight = 3
+
+[[params.nav]]
+  identifier = "tags"
+  name = "Tags"
+  icon = "fas fa-tag fa-lg"
+  url = "tags"
+  weight = 3
+
+[[params.nav]]
+  identifier = "categories"
+  name = "Category"
+  icon = "fas fa-folder-open fa-lg"
+  url = "categories"
+  weight = 3
+
+[[params.nav]]
+  identifier = "search"
+  name = "Search"
+  icon = "fas fa-search fa-lg"
+  url = "search"
+  weight = 3
+
+[[params.nav]]
+  identifier = "archives"
+  name = "Archives"
+  icon = "fas fa-archive fa-lg"
+  url = "archives"
+  weight = 3
+
 
 [params]
   author = "Abhishek Vicky"
@@ -27,11 +51,13 @@ theme = "m10c"
   avatar = "vicky.jpg"
 
   [[params.social]]
-    icon = "github"
     name = "GitHub"
-    url = "https://github.com/a7vicky"
+    link = "https://github.com/a7vicky"
 
   [[params.social]]
-    icon = "twitter"
     name = "Twitter"
-    url = "https://twitter.com/vicky18dec"
+    link = "https://twitter.com/vicky18dec"
+
+  [[params.social]]
+    name = "linkedin"
+    link = "https://www.linkedin.com/in/a7vicky"
